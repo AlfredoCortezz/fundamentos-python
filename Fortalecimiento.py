@@ -1,3 +1,16 @@
+'''
+Clase:        Clase 3
+Tema:         Fortalecimeinto y guia de Github
+Ejercicio:    Contraseña, calculadora y numero magico
+Descripción:  crear por medio de if condicional ejercicios de fortalecimiento
+
+Autor:        Alfredo Enmanuel Cortez Martínez
+Fecha:        2025-05-21
+Estado:       [ Terminado ]
+'''
+
+
+
 #op = 7 // 2
 #print(op)
 
