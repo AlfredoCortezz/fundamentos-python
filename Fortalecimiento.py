@@ -91,7 +91,24 @@ if num % 7 == 0 and num % 5 != 0:
 else:
     print("No magico")
 
+#----------------------------------------------------------------------------------------------------------------------------------------
+#propina
 
+total = float(input("Total de la cuenta: "))
+porcentaje = float(input("Porcentaje de propina: "))
+propina = total * porcentaje / 100
+total_final = total + propina
+print(f"Total de la cuenta: ${total}")
+print(f"Propina: {propina}")
+print(f"Total con propina ({int(porcentaje)}%): ${total_final}")
+
+#-----------------------------------------------------------------------------------------------------------------
+
+#Correo
+
+nombre = input("Nombre: ")
+apellido = input("Apellido: ")
+print(f"el correo es de:  {nombre}.{apellido}@keyinstitute.edu.sv")
 #_----------------------------------------------------------------------------------------------------------------------------------
 
 #año biciesto
