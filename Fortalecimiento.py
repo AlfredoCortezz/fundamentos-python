@@ -106,9 +106,14 @@ print(f"Total con propina ({int(porcentaje)}%): ${total_final}")
 
 #Correo
 
-nombre = input("Nombre: ")
-apellido = input("Apellido: ")
-print(f"el correo es de:  {nombre}.{apellido}@keyinstitute.edu.sv")
+nombre1 = input("Primer nombre: ")
+nombre2 = input("Segundo nombre: ")
+apellido1 = input("Primer apellido: ")
+apellido2 = input("Segundo apellido: ")
+
+print(f"El correo es: {nombre1}.{nombre2}.{apellido1}.{apellido2}@keyinstitute.edu.sv")
+
+
 #_----------------------------------------------------------------------------------------------------------------------------------
 
 #año biciesto
