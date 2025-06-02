@@ -17,4 +17,4 @@ for num in reversed(numeros):
         lideres.append(num)
         mayor = num
 
-print(*reversed(lideres))
+print("el numero lider es: " *reversed(lideres))
