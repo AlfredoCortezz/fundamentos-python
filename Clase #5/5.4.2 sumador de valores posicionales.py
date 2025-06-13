@@ -1,5 +1,5 @@
 '''
-Clase:        Clase 6
+Clase:        Clase 5
 Tema:         Fortalecimeinto 
 Descripción:  Sumador de valores posicionales
 Autor:        Alfredo Enmanuel Cortez Martínez
