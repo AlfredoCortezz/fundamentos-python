@@ -1,3 +1,14 @@
+'''
+Clase:        Clase 7
+Tema:         Introducción a NumPy 
+Ejercicio:    Cuestionario
+Descripción:  completar cuestionario en base el array
+
+Autor:        Alfredo Enmanuel Cortez Martínez
+Fecha:        2025-05-30
+Estado:       [ Terminado ]
+'''
+
 import numpy as np 
 consumo = np.array([
     [12.5, 13.2, 11.9, 14.0, 13.5, 15.0, 14.3],

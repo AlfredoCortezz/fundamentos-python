@@ -1,3 +1,14 @@
+'''
+Clase:        Clase 7
+Tema:         Introducción a NumPy 
+Ejercicio:    Cuestionario
+Descripción:  completar cuestionario en base el array
+
+Autor:        Alfredo Enmanuel Cortez Martínez
+Fecha:        2025-05-30
+Estado:       [ Terminado ]
+'''
+
 import numpy as np
 
 my_list = [1, 2, 3, 4, 5]
