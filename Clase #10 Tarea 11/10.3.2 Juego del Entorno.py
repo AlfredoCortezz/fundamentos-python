@@ -9,23 +9,36 @@ Fecha:        2025-06-9
 Estado:       [ Terminado ]
 '''
 
-n = int(input("¿Cuántas filas y columnas tiene la matriz?: "))
+filas = int(input("Ingrese el número de filas: "))
+columnas = int(input("Ingrese el número de columnas: "))
 
-m = []
+matriz = []
+print(f"Ingrese {filas} filas, cada una con {columnas} números separados por comas (ej. 1,0,1,1,0):")
+for f in range(filas):
+    linea = input(f"Fila {f + 1}: ").split(',')
+    if len(linea) != columnas:
+        print("Error: se esperaban", columnas, "valores en esta fila.")
+        exit()
+    fila_numerica = [int(x) for x in linea]
+    matriz.append(fila_numerica)
 
-print("Escribe cada fila separando los números con comas: ")
-for f in range(n):
-    fila = list(map(int, input(f"Fila {f + 1}: ").split(',')))
-    m.append(fila)
+entorno = []
+for i in range(filas):
+    nueva_fila = []
+    for j in range(columnas):
+        suma = 0
+        for dx in [-1, 0, 1]:
+            for dy in [-1, 0, 1]:
+                if dx == 0 and dy == 0:
+                    continue  
+                x = i + dx
+                y = j + dy
+                if 0 <= x < filas and 0 <= y < columnas:
+                    suma += matriz[x][y]
+        nueva_fila.append(suma)
+    entorno.append(nueva_fila)
 
-x = True
-for i in range(n):
-    for j in range(n):
-        if m[i][j] != m[j][i]:
-            x = False
-            break
 
-if x:
-    print("La matriz es simétrica")
-else:
-    print("La matriz no es simétrica")
+print("Matriz del entorno:")
+for fila in entorno:
+    print(fila)
